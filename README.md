@@ -8,7 +8,7 @@
 
 New Yorkers are supposed to be tough. They're supposed to be resilient. They're supposed to be like this guy in a suit and tie riding a bike through the East Village in the rain. But I must confess, that even as a New Yorker with a deep love for my two-wheeled machine, I am a fair-weather cyclist. 
 
-This is the kind of week I love to spend in the saddle. It's the middle of September 2020. It's balmy (red line), humdity is low (yellow line), and there is absolutely no rain (brown line). And during this week, 413,223 New Yorkers hopped on a Citi Bike and took a ride (blue line).  
+This is the kind of week I love to spend in the saddle. It's the middle of September 2020. It's balmy (red line), humdity is low (yellow line), and there is absolutely no rain (brown line). And during this week, New Yorkers hopped on a Citi Bike and took a ride 413,223 times (blue line).  
 
 <p align="center">
   <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png">
@@ -59,6 +59,16 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 ### The Test
 
+Does weather impact Citi Bike ridership in New York City?
+
+Ho: Ridership is unaffected by weather conditions such as temperature, humidity, and rain
+Ha: Ridership will decrease based on high measurements of temperature, humidity, and rain
+
+Welch’s t-test, given the large population size and unequal variance
+
+Alpha: 0.05
+0.0167 with a Bonferroni correction for three tests 
+
 ----
 
 ### The Results 
@@ -72,8 +82,19 @@ Temp = pvalue=1.9517356662769365e-207
 
 
 
-**Future Avenues for Investigation**
+**Future Avenues**
 
+Parse the data further
+moderate weather conditions
+seasons
+time of day 
+
+Other attributes
+age 
+geography 
+gender 
+
+Additional year
 
 ----
 
