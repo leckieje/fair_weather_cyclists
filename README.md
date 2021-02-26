@@ -8,7 +8,7 @@
 
 New Yorkers are supposed to be tough. They're supposed to be resilient. They're supposed to be like this guy in a suit and tie riding a bike through the East Village in the rain. But I must confess, that even as a New Yorker with a deep love for my two-wheeled machine, I am a fair-weather cyclist. 
 
-This is the kind of week I love to spend in the saddle. It's the middle of September 2020. It's balmy (red line), humdity is low (yellow line), and there is absolutely no rain (brown line). And during this week, (TK # cyclists) New Yorkers hopped on a Citi Bike and took a ride (blue line).  
+This is the kind of week I love to spend in the saddle. It's the middle of September 2020. It's balmy (red line), humdity is low (yellow line), and there is absolutely no rain (brown line). And during this week, 413,223 New Yorkers hopped on a Citi Bike and took a ride (blue line).  
 
 <p align="center">
   <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png">
