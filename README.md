@@ -65,9 +65,9 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" width="100"> 
 
+<img align="right "src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="100">
+
 <p align="center">
   <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/python_original_logo_icon_146381.png" width="100"/> 
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" width="100"> 
 </p>
 
-<img align="right "src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="100">
