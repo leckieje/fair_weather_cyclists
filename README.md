@@ -10,21 +10,15 @@ New Yorkers are supposed to be tough. They're supposed to be resilient. They're 
 
 This is the kind of week I love to spend in the saddle. It's the middle of September 2020. It's balmy (red line), humdity is low (yellow line), and there is absolutely no rain (brown line). And during this week, (TK # cyclists) New Yorkers hopped on a Citi Bike and took a ride (blue line).  
 
-![perfect week, chart_period(9, 18, 26)](https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png)
-
-
 <p align="center">
-  <img width="550" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png">
+  <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png">
 </p>
-
 
 It was a welcomed week at the tail end of Summer's dog days where, like this Wednesday from August, the air was thick and hot and gave the city it's rainiest hour of the year. And although (TK # cyclists) braved the opprresive elements, the graph clearly shows that as rain began to fall in the late afternoon, ridership plummeted. 
 
-
 <p align="center">
-  <img width="550" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rainy_day.png">
+  <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rainy_day.png">
 </p>
-
 
 Am I not the only fair-weather cylcist in New York City? Do others who love to ride also hate the feeling of a water logged shoes and streaks of mudd running up their backs? Is there a statistically significant link between bike ridership and weather events like rain, temperature and humidity in New York City?
 
