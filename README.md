@@ -1,8 +1,9 @@
 # Fair_Weather_Cyclists
 
+*Is there a link between Citi Bike ridership and weather conditions? Does everyone hate riding in the rain? tl;dr Yes*
 
 <p align="center">
-  <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rider_in_the_rain.jpg">
+  <img width="650" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rider_in_the_rain.jpg">
 </p>
 
 New Yorkers are supposed to be tough. They're supposed to be resilient. They're supposed to be like this guy in a suit and tie riding a bike through the East Village in the rain. But I must confess, that even as a New Yorker with a deep love for my two-wheeled machine, I am a fair-weather cyclist. 
@@ -11,12 +12,23 @@ This is the kind of week I love to spend in the saddle. It's the middle of Septe
 
 ![perfect week, chart_period(9, 18, 26)](https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png)
 
+
+<p align="center">
+  <img width="550" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png">
+</p>
+
+
 It was a welcomed week at the tail end of Summer's dog days where, like this Wednesday from August, the air was thick and hot and gave the city it's rainiest hour of the year. And although (TK # cyclists) braved the opprresive elements, the graph clearly shows that as rain began to fall in the late afternoon, ridership plummeted. 
 
-![rainy day, chart_period(8, 9, 17)](https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rainy_day.png)
+
+<p align="center">
+  <img width="550" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rainy_day.png">
+</p>
+
 
 Am I not the only fair-weather cylcist in New York City? Do others who love to ride also hate the feeling of a water logged shoes and streaks of mudd running up their backs? Is there a statistically significant link between bike ridership and weather events like rain, temperature and humidity in New York City?
 
+----
 
 ### The Data
 
@@ -28,15 +40,18 @@ To infer any possible links betwen ridershiip and weather, I turned to Citi Bike
 
 ![NOAA Logo](https://www.vhv.rs/dpng/d/588-5888321_noaa-logo-national-oceanic-and-atmospheric-administration-vector.png)
 
+----
+
 ### The Test
 
+----
 
 ### The Results 
 
+----
+
 ### The Tech
 
-![Python Logo](https://mpng.subpng.com/20180811/pul/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg)
-
-![Pandas Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png)
-
-![Matplotlib Logo](https://matplotlib.org/stable/_static/logo2_compressed.svg)
+<p align="center">
+  <img src="https://mpng.subpng.com/20180811/pul/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg" width="100"/> <img src="image2.png" width="100"/><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" width="100"><img src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="100">
+</p>
