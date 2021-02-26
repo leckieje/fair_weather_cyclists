@@ -45,6 +45,11 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 **Issues to Consider**
 
+* COVID-19
+* Unrealistic outliers 
+* Which hour?
+* Dew Point = Humidity
+
 <p align="center">
   <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
   <img width="200" src="https://d32ogoqmya1dw8.cloudfront.net/images/nesta/about/noaa_logo.v2.jpg">
