@@ -26,13 +26,28 @@ Am I not the only fair-weather cylcist in New York City? Do others who love to r
 
 ### The Data
 
-To infer any possible links betwen ridershiip and weather, I turned to Citi Bike's [public system data and trip histories](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index). Both datasets are easily accesible via the respective organization's websites, althought APIs and public S3 buckets are also availible. 
+To infer any possible links betwen ridershiip and weather, I turned to Citi Bike's [public system data](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index]. Both datasets are easily accesible via the respective organization's websites, althought a public S3 bucket and an API are also availible. 
+
+**Citi Bike**
+
+The entire dataset contains nearly every ride taken in the system since June 2013 (Citi Bike removes trips taken by working staff, trips to/from "test" stations and trips shorter than 60 seconds). For my test, I focused on 2020, the most recent full year availible, with the following specifications:
+
+  * 12 files with more than 19.5 million data points.
+  * Columns for trip duration, start/end time and date, start/end station name/id/lat/long, bike id, user type, gender and birth year.
+
+**Weather**
+
+NCEI's Integrrated Surface Data is availible via its website or an API and comes in a variety of customizable measurements and frequencies. For this project, I downloaded:
+
+  * Hourly data measured at the Central Park weather station located in Belvedere Castle for all of 2020.
+  * After cleaning, the data set contained more than 8,700 data points.
+  * Columns included air temperature, dew point, liquiid precipitation, wind gusts, and sky cover conditions.
 
 
-
-![Citi Bike Logo](https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104)
-
-![NOAA Logo](https://www.vhv.rs/dpng/d/588-5888321_noaa-logo-national-oceanic-and-atmospheric-administration-vector.png)
+<p align="center">
+  <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
+  <img width="200" src="https://d32ogoqmya1dw8.cloudfront.net/images/nesta/about/noaa_logo.v2.jpg">
+</p>
 
 ----
 
@@ -47,5 +62,5 @@ To infer any possible links betwen ridershiip and weather, I turned to Citi Bike
 ### The Tech
 
 <p align="center">
-  <img src="https://mpng.subpng.com/20180811/pul/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg" width="100"/> <img src="image2.png" width="100"/><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" width="100"><img src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="100">
+  <img src="https://mpng.subpng.com/20180811/pul/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg" width="100"/> <img src="image2.png" width="100"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" width="100"> <img src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="100">
 </p>
