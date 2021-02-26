@@ -43,7 +43,7 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
   * After cleaning, the data set contained more than 8,700 data points.
   * Columns included air temperature, dew point, liquiid precipitation, wind gusts, and sky cover conditions.
 
-
+**Issues to Consider**
 
 <p align="center">
   <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
@@ -57,6 +57,18 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 ----
 
 ### The Results 
+
+
+Dew = pvalue=9.780001451639427e-75
+
+Rain = pvalue=2.293253491572896e-53
+
+Temp = pvalue=1.9517356662769365e-207
+
+
+
+**Future Avenues for Investigation**
+
 
 ----
 
