@@ -1,6 +1,6 @@
 # Fair_Weather_Cyclists
 
-*Is there a link between Citi Bike ridership and weather conditions? Does everyone hate riding in the rain? tl;dr Yes*
+*Is there a link between Citi Bike ridership and weather conditions? Does everyone hate riding in the rain?*
 
 <p align="center">
   <img width="650" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rider_in_the_rain.jpg">
@@ -44,6 +44,7 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
   * Columns included air temperature, dew point, liquiid precipitation, wind gusts, and sky cover conditions.
 
 
+
 <p align="center">
   <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
   <img width="200" src="https://d32ogoqmya1dw8.cloudfront.net/images/nesta/about/noaa_logo.v2.jpg">
@@ -62,5 +63,7 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 ### The Tech
 
 <p align="center">
-  <img src="https://mpng.subpng.com/20180811/pul/kisspng-python-general-purpose-programming-language-comput-python-programming-language-symphony-solution-5b6ee0c863a5a1.6306397415339931604082.jpg" width="100"/> <img src="image2.png" width="100"/> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" width="100"> <img src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="100">
+  <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/python_original_logo_icon_146381.png" width="100"/> 
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/600px-Pandas_logo.svg.png" width="100"> 
+  <img src="https://matplotlib.org/stable/_static/logo2_compressed.svg" width="100">
 </p>
