@@ -26,7 +26,7 @@ Am I not the only fair-weather cylcist in New York City? Do others who love to r
 
 ### The Data
 
-To infer any possible links betwen ridershiip and weather, I turned to Citi Bike's [public system data](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index]. Both datasets are easily accesible via the respective organization's websites, althought a public S3 bucket and an API are also availible. 
+To infer any possible links betwen ridershiip and weather, I turned to Citi Bike's [public system data](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index). Both datasets are easily accesible via the respective organization's websites, althought a public S3 bucket and an API are also availible. 
 
 **Citi Bike**
 
