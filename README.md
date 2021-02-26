@@ -14,7 +14,7 @@ This is the kind of week I love to spend in the saddle. It's the middle of Septe
   <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png">
 </p>
 
-It was a welcomed week at the tail end of Summer's dog days where, like this Wednesday from August, the air was thick and hot and gave the city it's rainiest hour of the year. And although (TK # cyclists) braved the opprresive elements, the graph clearly shows that as rain began to fall in the late afternoon, ridership plummeted. 
+It was a welcomed week at the tail end of Summer's dog days where, like this Wednesday from August, the air was thick and hot and gave the city it's rainiest hour of the year. And although 66,069 braved the opprresive elements, the graph clearly shows that as rain began to fall in the late afternoon, ridership plummeted. 
 
 <p align="center">
   <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rainy_day.png">
