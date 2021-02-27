@@ -61,7 +61,7 @@ During EDA, charts of temperature and dew point against time showed a handfull o
 
 *Dew Point = Humidity*
 
-This test relies on dew point as a measurment for humidity. According to the National Oceanic and Atmospheric Association, "If you want a real judge of just how 'dry' or 'humid' it will feel outside, look at the dew point instead of the rerlative humidity. The higher the dew point, the muggier it will feel." The assocaition suggests the folling ranges:
+This test relies on dew point as a measurment for humidity. According to the National Oceanic and Atmospheric Association, "If you want a real judge of just how 'dry' or 'humid' it will feel outside, look at the dew point instead of the rerlative humidity. The higher the dew point, the muggier it will feel." The assocaition suggests the following ranges:
 
   * less than or equal to 55: dry and comfortable
   * between 55 and 65: becoming "sticky" with muggy evenings
@@ -85,10 +85,9 @@ Temperature, dew point and rain were all plotted against rides/hour. The goal wa
   * <b>Dew Point:</b> Low (<=55F): 5,927 vs. High (>55F): 2,785
 
 
-<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="400"> 
+<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="400"> <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="400"> 
 
-<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="400"> 
-<br /> 
+<br />  
 
 ---
 
