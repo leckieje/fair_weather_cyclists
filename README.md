@@ -44,6 +44,8 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
   * 8,700 + data points after removing weekly/montly summaries and other non-regular reports.
   * Columns included air temperature, dew point, liquiid precipitation, wind gusts, and sky cover conditions.
 
+---
+
 **Issues to Consider**
 
 *COVID-19*
@@ -56,7 +58,6 @@ As we all know, the world was greatly impacted by the COVID-19 pandemic in 2020,
 *Unrealistic outliers*
 
 During EDA, charts of temperature and dew point against time showed a handfull of unrealisstic measurments above 1,800 degrees fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements in the hour before and the hour after as an estimate for the hour in quesiton. 
-
 
 *Dew Point = Humidity*
 
@@ -75,12 +76,39 @@ This test relies on dew point as a measurment for humidity. According to the Nat
 
 ----
 
+### The Data: Exploration
+
+Temperature, dew point and rain were all plotted against rides/hour. The goal was to estimate reasonable segmentation points so that the data could be grouped into sub-populations for comparison. For this first pass at my test, two subpopulations for each weather condition were created. Based on experience, recomendations from experts, and the resulting plots, conditions were split into the following groups with resulting sizes: 
+
+  * No rain (=0mm): 8,033
+  * Any rain(>0mm): 679
+<br /> 
+  * Temp cool (<75F): 4,854
+  * Temp hot (>=75F): 3,858
+<br /> 
+  * Dew low (<=55F): 5,927
+  * Dew high (>55F): 2,785
+<br /> 
+
+<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="300"> 
+
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="300"> 
+
+<p align="center">
+  <img width="300" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_dew_dot.png">
+</p>
+
 ### The Test
 
 Does weather impact Citi Bike ridership in New York City?
 
-Ho: Ridership is unaffected by weather conditions such as temperature, humidity, and rain
-Ha: Ridership will decrease based on high measurements of temperature, humidity, and rain
+Null hypothesis:
+
+  * Ho: Ridership is unaffected by weather conditions such as temperature, humidity, and rain
+
+Alternative hypothesis:
+
+  * Ha: Ridership will decrease based on high measurements of temperature, humidity, and rain
 
 Welch’s t-test, given the large population size and unequal variance
 
