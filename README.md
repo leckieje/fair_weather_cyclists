@@ -46,15 +46,13 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 **Issues to Consider**
 
-<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="400"> 
-<br />  
-<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400"> 
-
 *COVID-19*
 
 As we all know, the world was greatly impacted by the COVID-19 pandemic in 2020, and New York City was no exception. In particular, the pandemic influenced both the need for and choice of transportation options. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring, about the time the pandemic took over the city, and a surge in late summer The extent of the pandemic's impact on these trends cannot be determined without further investigation. 
    
-<br />    
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="400"> 
+<br />  
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400">     
    
 *Unrealistic outliers*
 
