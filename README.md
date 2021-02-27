@@ -116,7 +116,7 @@ The test returned extrremely low p-values, well below the alpha, for all three t
 
 ---
 
-**The Future**
+### The Future
 
 This was a first pass at combining weather measurements and ride data for the purpose a single statistical test. The resulting dataset is dense and rich with many more aveneues for exploration.
 
