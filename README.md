@@ -58,6 +58,8 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 During EDA, charts of temperature and dew point against time showed a handfull of unrealisstic measurments above 1,800 degrees fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements in the hour before and the hour after as an estimate for the hour in quesiton. 
 
+
+
 *Dew Point = Humidity*
 
 This test relies on dew point as a measurment for humidity. According to the National Oceanic and Atmospheric Association, "If you want a real judge of just how 'dry' or 'humid' it will feel outside, look at the dew point instead of the rerlative humidity. The higher the dew point, the muggier it will feel." The assocaition suggests the folling ranges:
