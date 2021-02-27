@@ -47,7 +47,7 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 **Issues to Consider**
 
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="400"> 
-
+<br />  
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400"> 
 
 *COVID-19*
