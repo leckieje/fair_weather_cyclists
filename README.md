@@ -90,10 +90,10 @@ Temperature, dew point and rain were all plotted against rides/hour. The goal wa
   * Dew high (>55F): 2,785
 <br /> 
 
-<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="300"> 
+<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="400"> 
 
-<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="300"> 
-
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="400"> 
+<br /> 
 <p align="center">
   <img width="300" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_dew_dot.png">
 </p>
