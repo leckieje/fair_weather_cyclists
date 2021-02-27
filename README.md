@@ -82,21 +82,25 @@ Temperature, dew point and rain were all plotted against rides/hour. The goal wa
 
   * No rain (=0mm): 8,033
   * Any rain(>0mm): 679
-<br /> 
+
+
   * Temp cool (<75F): 4,854
   * Temp hot (>=75F): 3,858
-<br /> 
+
+
   * Dew low (<=55F): 5,927
   * Dew high (>55F): 2,785
-<br /> 
+
 
 <img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="400"> 
 
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="400"> 
 <br /> 
 <p align="center">
-  <img width="300" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_dew_dot.png">
+  <img width="400" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_dew_dot.png">
 </p>
+
+---
 
 ### The Test
 
