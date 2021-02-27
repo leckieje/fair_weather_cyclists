@@ -85,9 +85,9 @@ Temperature, dew point and rain were all plotted against rides/hour. The goal wa
 
 For this first pass at my test, two sub-populations for each weather condition were created. Based on experience, recommendations from experts, and the resulting plots, conditions were split into the following groups with the resulting sizes: 
 
-  <b>Rain:</b> <i>No rain</i> (=0mm): 8,033 vs. <i>Any rain</i> (>0mm): 679
-  <b>Temperature:</b> <i>Cool</i> (<75F): 4,854 vs. <i>Hot</i> (>=75F): 3,858
-  <b>Dew Point:</b> <i>Low</i> (<=55F): 5,927 vs. <i>High</i> (>55F): 2,785
+  <b>Rain:</b> No rain <i>(=0mm):</i> 8,033 vs. Any rain <i>(>0mm):</i> 679
+  <b>Temperature:</b> Cool <i>(<75F):</i> 4,854 vs. Hot <i>(>=75F):</i> 3,858
+  <b>Dew Point:</b> Low <i>(<=55F):<i> 5,927 vs. High <i>(>55F):</i> 2,785
 
 <br /> 
 
