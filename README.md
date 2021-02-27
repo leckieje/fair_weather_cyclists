@@ -87,7 +87,7 @@ For this first pass at my test, two sub-populations for each weather condition w
 
   <b>Rain:</b> No rain <i>(=0mm):</i> 8,033 vs. Any rain <i>(>0mm):</i> 679
   <b>Temperature:</b> Cool <i>(<75F):</i> 4,854 vs. Hot <i>(>=75F):</i> 3,858
-  <b>Dew Point:</b> Low <i>(<=55F):<i> 5,927 vs. High <i>(>55F):</i> 2,785
+  <b>Dew Point:</b> Low <i>(<=55F):</i> 5,927 vs. High <i>(>55F):</i> 2,785
 
 <br /> 
 
