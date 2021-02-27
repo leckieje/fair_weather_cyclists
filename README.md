@@ -8,29 +8,29 @@
 
 New Yorkers are supposed to be tough. They're supposed to be resilient. They're supposed to be like this guy in a suit and tie riding a bike through the East Village in the rain. But I must confess, that even as a New Yorker with a deep love for my two-wheeled machine, I am a fair-weather cyclist. 
 
-This is the kind of week I love to spend in the saddle. It's the middle of September 2020. It's balmy (red line), humdity is low (yellow line), and there is absolutely no rain (brown line). And during this week, New Yorkers hopped on a Citi Bike and took a ride 413,223 times (blue line).  
+This is the kind of week I love to spend in the saddle. It's the middle of September 2020. It's balmy (red line), humidity is low (yellow line), and there is absolutely no rain (brown line). And during this week, New Yorkers hopped on a Citi Bike and took a ride 413,223 times (blue line).  
 
 <p align="center">
   <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/great_bike_week.png">
 </p>
 
-It was a welcomed week at the tail end of Summer's dog days where, like this Wednesday from August, the air was thick and hot and gave the city it's rainiest hour of the year. And although 66,069 braved the opprresive elements, the graph clearly shows that as rain began to fall in the late afternoon, ridership plummeted. 
+It was a welcomed week at the tail end of Summer's dog days where, like this Wednesday from August, the air was thick and hot and gave the city its rainiest hour of the year. And although 66,069 riders braved the oppressive elements, the graph clearly shows that as rain began to fall in the late afternoon, ridership plummeted. 
 
 <p align="center">
   <img width="600" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rainy_day.png">
 </p>
 
-Am I not the only fair-weather cylcist in New York City? Do others who love to ride also hate the feeling of a water logged shoes and streaks of mudd running up their backs? Is there a statistically significant link between bike ridership and weather events like rain, temperature and humidity in New York City?
+Am I not the only fair-weather cyclist in New York City? Do others who love to ride also hate the feeling of a water logged shoes and streaks of mud running up their backs? Is there a statistically significant link between bike ridership and weather events like rain, temperature and humidity in New York City?
 
 ----
 
 ### The Data
 
-To infer any possible links betwen ridershiip and weather, I turned to Citi Bike's [public system data](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index). Both datasets are easily accesible via the respective organization's websites, althought a public S3 bucket and an API are also availible. 
+To infer any possible links between ridership and weather, I turned to Citi Bike's [public system data](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index). Both datasets are easily accessible via the respective organization's websites, although a public S3 bucket and an API are also available. 
 
 **Citi Bike**
 
-The entire dataset contains nearly every ride taken in the system since June 2013 (Citi Bike removes trips taken by working staff, trips to/from "test" stations and trips shorter than 60 seconds). For my test, I focused on 2020, the most recent full year availible, with the following specifications:
+The entire dataset contains nearly every ride taken in the system since June 2013 (Citi Bike removes trips taken by working staff, trips to/from "test" stations and trips shorter than 60 seconds). For my test, I focused on 2020, the most recent full year available, with the following specifications:
 
   * Nearly every ride taken in New York City during 2020 (Citi Bike removes rides by woking staff and rides shorter than 60 seconds)
   * 19.5+ million data points.
@@ -38,11 +38,11 @@ The entire dataset contains nearly every ride taken in the system since June 201
 
 **Weather**
 
-NCEI's Integrrated Surface Data is availible via its website or an API and comes in a variety of customizable measurements and frequencies. For this project, I downloaded:
+NCEI's Integrated Surface Data is available via its website or an API and comes in a variety of customizable measurements and frequencies. For this project, I downloaded:
 
   * Hourly data measured at the Central Park weather station for all of 2020.
-  * 8,700 + data points after removing weekly/montly summaries and other non-regular reports.
-  * Columns included air temperature, dew point, liquiid precipitation, wind gusts, and sky cover conditions.
+  * 8,700 + data points after removing weekly/monthly summaries and other non-regular reports.
+  * Columns included air temperature, dew point, liquid precipitation, wind gusts, and sky cover conditions.
 
 <br /> 
 
@@ -57,18 +57,18 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 *COVID-19*
 
-As we all know, the world was greatly impacted by the COVID-19 pandemic in 2020, and New York City was no exception. In particular, the pandemic influenced both the need for and choice of transportation options. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring, about the time the pandemic took over the city, and a surge in late summer The extent of the pandemic's impact on these trends cannot be determined without further investigation. 
+As we all know, the world was greatly impacted by the COVID-19 pandemic in 2020, and New York City was no exception. In particular, the pandemic influenced both the need for and choice of transportation options options for the city's denizens. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring, about the time the pandemic took over the city, and a surge in late summer. The extent of the pandemic's impact on these trends cannot be determined without further investigation. 
    
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="400"> 
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400">     
    
 *Unrealistic outliers*
 
-During EDA, charts of temperature and dew point against time showed a handfull of unrealisstic measurments above 1,800 degrees fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements in the hour before and the hour after as an estimate for the hour in quesiton. 
+During EDA, charts of temperature and dew point against time showed a handful of unrealistic measurements above 1,800 degrees Fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements from the hour before and the hour after as an estimate for the hour in question. 
 
 *Dew Point = Humidity*
 
-This test relies on dew point as a measurment for humidity. According to the National Oceanic and Atmospheric Association, "If you want a real judge of just how 'dry' or 'humid' it will feel outside, look at the dew point instead of the rerlative humidity. The higher the dew point, the muggier it will feel." The assocaition suggests the following ranges:
+This test relies on dew point as a measurement for humidity. According to the National Oceanic and Atmospheric Association, "If you want a real judge of just how 'dry' or 'humid' it will feel outside, look at the dew point instead of [relative humidity]. The higher the dew point, the muggier it will feel." The Association suggests the following ranges:
 
   * less than or equal to 55: dry and comfortable
   * between 55 and 65: becoming "sticky" with muggy evenings
@@ -83,7 +83,7 @@ Temperature, dew point and rain were all plotted against rides/hour. The goal wa
 
   <img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="400"> 
 
-For this first pass at my test, two sub-populations for each weather condition were created. Based on experience, recomendations from experts, and the resulting plots, conditions were split into the following groups with resulting sizes: 
+For this first pass at my test, two sub-populations for each weather condition were created. Based on experience, recommendations from experts, and the resulting plots, conditions were split into the following groups with resulting sizes: 
 
   <b>Rain:</b> No rain (=0mm): 8,033 vs. Any rain (>0mm): 679
   <b>Temperature:</b> Cool (<75F): 4,854 vs. Hot (>=75F): 3,858
@@ -95,7 +95,7 @@ For this first pass at my test, two sub-populations for each weather condition w
 
 ### The Test
 
-To address the question "Does weather impact Citi Bike ridership in New York City?" null and alternative hypothesizes were set along with an significance level. A Welch's t-test was chosen for the comparison becuase of the large samples sizes. 
+To address the question "Does weather impact Citi Bike ridership in New York City?" null and alternative hypothesizes were set along with a significance level. A Welch's t-test was chosen for the comparison due to the sub-populations' large size. 
 
   * <b>Ho:</b> Ridership is unaffected by weather conditions such as temperature, humidity, and rain
   * <b>Ha:</b> Ridership will decrease based on high measurements of temperature, humidity, and rain
@@ -107,7 +107,7 @@ To address the question "Does weather impact Citi Bike ridership in New York Cit
 
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rain_test.png" width="400"> 
 
-The test returned extrremely low p-values, well below the alpha, for all three tests. As a result, I can safely reject my null hypothosis and conclude ridership is impacted by temperature, rain, and humidity. The chart to the right show the frequency of rides in the 'No rain' and 'Any rain' subpopulations. The dashed lines show the sub-population's actual means separated by a significant margin. The results for dew and temperature appear similar.
+The test returned extremely low p-values, well below the alpha, for all three tests. As a result, I can safely reject my null hypothesis (and soothe my ego) to conclude ridership is impacted by temperature, rain, and humidity. The chart to the right shows the normalized frequency of rides in the 'No rain' and 'Any rain' sub-populations. The dashed lines show the sub-population's actual means separated by a significant margin, which was expected given our p-values. The results for dew and temperature appear similar.
 
 <i>P-values:</i>
   * Dew: 9.780001451639427e-75
@@ -118,11 +118,11 @@ The test returned extrremely low p-values, well below the alpha, for all three t
 
 ### The Future
 
-This was a first pass at combining weather measurements and ride data for the purpose a single statistical test. The resulting dataset is dense and rich with many more aveneues for exploration.
+This was a first pass at combining weather measurements and ride data for the purpose a single statistical test. The resulting dataset is dense and rich with many more avenues for exploration.
 
 A finer understanding of weather's impact on ridership could be gained by parsing the data further. Additional sub-populations could be created to account for more moderate weather conditions, seasons, and the time of day. This test did not account for the continuous nature of the data over 24 hour periods. 
 
-Attributes already pressent in the data set including gender, age, geography, customer type, and additional weather conditions could be explored to further refine these findings or answer other questions.
+Attributes already present in the data set including gender, age, geography, customer type, and additional weather conditions could be explored to further refine these findings or answer other questions.
 
 Finally, an additional year could be considered to avoid the uncertainty around COVID-19's impact on ridership or, when compared to 2020, measure what impact the pandemic had.  
 
