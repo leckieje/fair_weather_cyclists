@@ -44,9 +44,16 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
   * 8,700 + data points after removing weekly/montly summaries and other non-regular reports.
   * Columns included air temperature, dew point, liquiid precipitation, wind gusts, and sky cover conditions.
 
+<br /> 
+
+<p align="center">
+  <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
+  <img width="200" src="https://d32ogoqmya1dw8.cloudfront.net/images/nesta/about/noaa_logo.v2.jpg">
+</p>
+
 ---
 
-**Issues to Consider**
+### The Data: Issues
 
 *COVID-19*
 
@@ -67,12 +74,6 @@ This test relies on dew point as a measurment for humidity. According to the Nat
   * between 55 and 65: becoming "sticky" with muggy evenings
   * greater than or equal to 65: lots of moisture in the air, becoming oppressive
 
-<br /> 
-
-<p align="center">
-  <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
-  <img width="200" src="https://d32ogoqmya1dw8.cloudfront.net/images/nesta/about/noaa_logo.v2.jpg">
-</p>
 
 ----
 
