@@ -81,7 +81,7 @@ This test relies on dew point as a measurment for humidity. According to the Nat
 Temperature, dew point and rain were all plotted against rides/hour. The goal was to estimate reasonable segmentation points so that the data could be grouped into sub-populations for comparison. 
 
 <img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="375"> 
-<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="375"> 
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="375"> 
 
 <br /> 
 
