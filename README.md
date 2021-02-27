@@ -46,25 +46,27 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 **Issues to Consider**
 
-<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png width="400"> 
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="300"> 
 
 *COVID-19*
 
 2020, as we all know, was greatly impacted by the COVID-19 pandemic, and New York City was no exception. In particular, the pandemic influenced both the need and the choice of transportation options. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring and a surge in late summer, but the extent of the pandemic's impact on these trends cannot be determined without further investigation. 
 
-<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png"400"> 
+<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="300"> 
                                                                                                                            
 *Unrealistic outliers*
 
 During EDA, charts of temperature and dew point against time showed a handfull of unrealisstic measurments above 1,800 degrees fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements in the hour before and the hour after as an estimate for the hour in quesiton. 
 
-*Dew Point = Humidity
+*Dew Point = Humidity*
 
 This test relies on dew point as a measurment for humidity. According to the National Oceanic and Atmospheric Association, "If you want a real judge of just how 'dry' or 'humid' it will feel outside, look at the dew point instead of the rerlative humidity. The higher the dew point, the muggier it will feel." The assocaition suggests the folling ranges:
 
   * less than or equal to 55: dry and comfortable
   * between 55 and 65: becoming "sticky" with muggy evenings
   * greater than or equal to 65: lots of moisture in the air, becoming oppressive
+
+
 
 <p align="center">
   <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
