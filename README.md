@@ -88,52 +88,42 @@ For this first pass at my test, two sub-populations for each weather condition w
   <b>Temperature:</b> Cool (<75F): 4,854 vs. Hot (>=75F): 3,858
   <b>Dew Point:</b> Low (<=55F): 5,927 vs. High (>55F): 2,785
 
+<br /> 
+
 ---
 
 ### The Test
 
-Does weather impact Citi Bike ridership in New York City?
+To address the question "Does weather impact Citi Bike ridership in New York City?" null and alternative hypothesizes were set along with an significance level. A Welch's t-test was chosen for the comparison becuase of the large samples sizes. 
 
-Null hypothesis:
-
-  * Ho: Ridership is unaffected by weather conditions such as temperature, humidity, and rain
-
-Alternative hypothesis:
-
-  * Ha: Ridership will decrease based on high measurements of temperature, humidity, and rain
-
-Welch’s t-test, given the large population size and unequal variance
-
-Alpha: 0.05
-0.0167 with a Bonferroni correction for three tests 
+  * <b>Ho:</b> Ridership is unaffected by weather conditions such as temperature, humidity, and rain
+  * <b>Ha:</b> Ridership will decrease based on high measurements of temperature, humidity, and rain
+  * <b>Alpha:</b> 0.05 (0.0167 with a Bonferroni correction for three test) 
 
 ----
 
 ### The Results 
 
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rain_test.png"> 
 
-Dew = pvalue=9.780001451639427e-75
+The test returned extrremely low p-values, well below the alpha, for all three tests. As a result, I can safely reject my null hypothosis and conclude ridership is impacted by temperature, rain, and humidity. The chart to the right show the frequency of rides in the 'No rain' and 'Any rain' subpopulations. The dashed lines show the sub-population's actual means separated by a significant margin. The results for dew and temperature appear similar.
 
-Rain = pvalue=2.293253491572896e-53
+<i>P-values:</i>
+  * Dew: 9.780001451639427e-75
+  * Rain: 2.293253491572896e-53
+  * Temp: 1.9517356662769365e-207
 
-Temp = pvalue=1.9517356662769365e-207
+---
 
+**The Future**
 
+This was a first pass at combining weather measurements and ride data for the purpose a single statistical test. The resulting dataset is dense and rich with many more aveneues for exploration.
 
-**Future Avenues**
+A finer understanding of weather's impact on ridership could be gained by parsing the data further. Additional sub-populations could be created to account for more moderate weather conditions, seasons, and the time of day. This test did not account for the continuous nature of the data over 24 hour periods. 
 
-The dataset is dense and rich with many more avenues to explore. Attributes including gender, age, geography, customer type, and other additional weather conditions could be explored to further refine these findings or answer other questions.
-Parse the data further
-moderate weather conditions
-seasons
-time of day 
+Attributes already pressent in the data set including gender, age, geography, customer type, and additional weather conditions could be explored to further refine these findings or answer other questions.
 
-Other attributes
-age 
-geography 
-gender 
-
-Additional year
+Finally, an additional year could be considered to avoid the uncertainty around COVID-19's impact on ridership or, when compared to 2020, measure what impact the pandemic had.  
 
 ----
 
