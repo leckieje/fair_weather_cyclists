@@ -104,7 +104,7 @@ To address the question "Does weather impact Citi Bike ridership in New York Cit
 
 ### The Results 
 
-<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rain_test.png"> 
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rain_test.png" width="400"> 
 
 The test returned extrremely low p-values, well below the alpha, for all three tests. As a result, I can safely reject my null hypothosis and conclude ridership is impacted by temperature, rain, and humidity. The chart to the right show the frequency of rides in the 'No rain' and 'Any rain' subpopulations. The dashed lines show the sub-population's actual means separated by a significant margin. The results for dew and temperature appear similar.
 
