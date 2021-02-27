@@ -26,19 +26,19 @@ Am I not the only fair-weather cyclist in New York City? Do others who love to r
 
 ### The Data
 
-To infer any possible links between ridership and weather, I turned to Citi Bike's [public system data](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index). Both datasets are easily accessible via the respective organization's websites, although a public S3 bucket and an API are also available. 
+To infer any possible links between ridership and weather, I turned to Citi Bike's [public system data](https://www.citibikenyc.com/system-data) and hourly Integrated Surface Data from the [National Centers for Environmental Information](https://www.ncei.noaa.gov/access/search/index)(NCEI). Both datasets are easily accessible via the respective organization's websites, although a public S3 bucket and an API are also available. 
 
 **Citi Bike**
 
-The entire dataset contains nearly every ride taken in the system since June 2013 (Citi Bike removes trips taken by working staff, trips to/from "test" stations and trips shorter than 60 seconds). For my test, I focused on 2020, the most recent full year available, with the following specifications:
+The entire dataset contains nearly every ride taken in New York City and Jersey City since June 2013 (Citi Bike removes rides taken by working staff and rides shorter than 60 seconds). For my test, I focused on 2020, the most recent full year available, with the following specifications:
 
-  * Nearly every ride taken in New York City during 2020 (Citi Bike removes rides by woking staff and rides shorter than 60 seconds)
+  * Rides taken in New York City 
   * 19.5+ million data points.
   * Columns for trip duration, start/end time and date, start/end station, station name/id/lat/long, bike id, user type, gender and birth year.
 
 **Weather**
 
-NCEI's Integrated Surface Data is available via its website or an API and comes in a variety of customizable measurements and frequencies. For this project, I downloaded:
+NCEI's Integrated Surface Data is available via its website or an API and comes in a variety of customizable measurements and frequencies. For this test, I collected:
 
   * Hourly data measured at the Central Park weather station for all of 2020.
   * 8,700 + data points after removing weekly/monthly summaries and other non-regular reports.
@@ -57,14 +57,14 @@ NCEI's Integrated Surface Data is available via its website or an API and comes 
 
 *COVID-19*
 
-As we all know, the world was greatly impacted by the COVID-19 pandemic in 2020, and New York City was no exception. In particular, the pandemic influenced both the need for and choice of transportation options options for the city's denizens. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring, about the time the pandemic took over the city, and a surge in late summer. The extent of the pandemic's impact on these trends cannot be determined without further investigation. 
+As we all know, the world was greatly impacted by the COVID-19 pandemic in 2020, and New York City was no exception. In particular, the pandemic influenced both the need for and choice of transportation options for the city's denizens. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring, about the time the pandemic took over the city, and a surge in late summer. The extent of the pandemic's impact on these trends cannot be determined without further investigation. 
    
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="400"> 
 <img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400">     
    
 *Unrealistic outliers*
 
-During EDA, charts of temperature and dew point against time showed a handful of unrealistic measurements above 1,800 degrees Fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements from the hour before and the hour after as an estimate for the hour in question. 
+During EDA, charts of temperature and dew point against time showed a handful of unrealistic measurements above 1,800 degrees Fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associated with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements from the hour before and the hour after as an estimate for the hour in question. 
 
 *Dew Point = Humidity*
 
@@ -83,11 +83,11 @@ Temperature, dew point and rain were all plotted against rides/hour. The goal wa
 
   <img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="400"> 
 
-For this first pass at my test, two sub-populations for each weather condition were created. Based on experience, recommendations from experts, and the resulting plots, conditions were split into the following groups with resulting sizes: 
+For this first pass at my test, two sub-populations for each weather condition were created. Based on experience, recommendations from experts, and the resulting plots, conditions were split into the following groups with the resulting sizes: 
 
-  <b>Rain:</b> No rain (=0mm): 8,033 vs. Any rain (>0mm): 679
-  <b>Temperature:</b> Cool (<75F): 4,854 vs. Hot (>=75F): 3,858
-  <b>Dew Point:</b> Low (<=55F): 5,927 vs. High (>55F): 2,785
+  <b>Rain:</b> <i>No rain</i> (=0mm): 8,033 vs. <i>Any rain</i> (>0mm): 679
+  <b>Temperature:</b> <i>Cool</i> (<75F): 4,854 vs. <i>Hot</i> (>=75F): 3,858
+  <b>Dew Point:</b> <i>Low</i> (<=55F): 5,927 vs. <i>High</i> (>55F): 2,785
 
 <br /> 
 
@@ -99,7 +99,7 @@ To address the question "Does weather impact Citi Bike ridership in New York Cit
 
   * <b>Ho:</b> Ridership is unaffected by weather conditions such as temperature, humidity, and rain
   * <b>Ha:</b> Ridership will decrease based on high measurements of temperature, humidity, and rain
-  * <b>Alpha:</b> 0.05 (0.0167 with a Bonferroni correction for three test) 
+  * <b>Alpha:</b> 0.05 <i>(0.0167 with a Bonferroni correction for three test)</i> 
 
 ----
 
