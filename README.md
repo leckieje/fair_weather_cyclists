@@ -1,6 +1,6 @@
 # Fair_Weather_Cyclists
 
-*Is there a link between Citi Bike ridership and weather conditions? Does everyone hate riding in the rain?*
+*Does weather impact Citi Bike ridership in New York City?*
 
 <p align="center">
   <img width="650" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rider_in_the_rain.jpg">
@@ -46,13 +46,13 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 **Issues to Consider**
 
-<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="300"> 
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png" width="400"> 
 
 *COVID-19*
 
 2020, as we all know, was greatly impacted by the COVID-19 pandemic, and New York City was no exception. In particular, the pandemic influenced both the need and the choice of transportation options. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring and a surge in late summer, but the extent of the pandemic's impact on these trends cannot be determined without further investigation. 
 
-<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="300"> 
+<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400"> 
                                                                                                                            
 *Unrealistic outliers*
 
@@ -65,6 +65,8 @@ This test relies on dew point as a measurment for humidity. According to the Nat
   * less than or equal to 55: dry and comfortable
   * between 55 and 65: becoming "sticky" with muggy evenings
   * greater than or equal to 65: lots of moisture in the air, becoming oppressive
+
+
 
 
 
