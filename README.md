@@ -52,12 +52,11 @@ NCEI's Integrrated Surface Data is availible via its website or an API and comes
 
 2020, as we all know, was greatly impacted by the COVID-19 pandemic, and New York City was no exception. In particular, the pandemic influenced both the need and the choice of transportation options. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring and a surge in late summer, but the extent of the pandemic's impact on these trends cannot be determined without further investigation. 
 
-<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400"> 
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png" width="400"> 
                                                                                                                            
 *Unrealistic outliers*
 
 During EDA, charts of temperature and dew point against time showed a handfull of unrealisstic measurments above 1,800 degrees fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements in the hour before and the hour after as an estimate for the hour in quesiton. 
-
 
 
 *Dew Point = Humidity*
