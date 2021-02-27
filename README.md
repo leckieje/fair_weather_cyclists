@@ -32,23 +32,39 @@ To infer any possible links betwen ridershiip and weather, I turned to Citi Bike
 
 The entire dataset contains nearly every ride taken in the system since June 2013 (Citi Bike removes trips taken by working staff, trips to/from "test" stations and trips shorter than 60 seconds). For my test, I focused on 2020, the most recent full year availible, with the following specifications:
 
-  * 12 files with more than 19.5 million data points.
-  * Columns for trip duration, start/end time and date, start/end station name/id/lat/long, bike id, user type, gender and birth year.
+  * Nearly every ride taken in New York City during 2020 (Citi Bike removes rides by woking staff and rides shorter than 60 seconds)
+  * 19.5+ million data points.
+  * Columns for trip duration, start/end time and date, start/end station, station name/id/lat/long, bike id, user type, gender and birth year.
 
 **Weather**
 
 NCEI's Integrrated Surface Data is availible via its website or an API and comes in a variety of customizable measurements and frequencies. For this project, I downloaded:
 
-  * Hourly data measured at the Central Park weather station located in Belvedere Castle for all of 2020.
-  * After cleaning, the data set contained more than 8,700 data points.
+  * Hourly data measured at the Central Park weather station for all of 2020.
+  * 8,700 + data points after removing weekly/montly summaries and other non-regular reports.
   * Columns included air temperature, dew point, liquiid precipitation, wind gusts, and sky cover conditions.
 
 **Issues to Consider**
 
-* COVID-19
-* Unrealistic outliers 
-* Which hour?
-* Dew Point = Humidity
+<img align="right" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/daily_trips_2020.png width="400"> 
+
+*COVID-19*
+
+2020, as we all know, was greatly impacted by the COVID-19 pandemic, and New York City was no exception. In particular, the pandemic influenced both the need and the choice of transportation options. This test is not meant as a study of COVID-19's impact on Citi Bike and any potential impact is not considered. A rough chart of daily ridership does show a dip in ridership beginning in early spring and a surge in late summer, but the extent of the pandemic's impact on these trends cannot be determined without further investigation. 
+
+<img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/outliers.png"400"> 
+                                                                                                                           
+*Unrealistic outliers*
+
+During EDA, charts of temperature and dew point against time showed a handfull of unrealisstic measurments above 1,800 degrees fahrenheit. Twenty-seven of these measurements were found for dew point and 25 for temperature. None were sequential, except for a single pair of dew points. Because weather measurements were made every hour and ride start times were recorded down to the second, a single weather measurement was associate with thousands of rides. This made simply dropping the outliers an unappealing option. To deal with the outliers, I averaged the measurements in the hour before and the hour after as an estimate for the hour in quesiton. 
+
+*Dew Point = Humidity
+
+This test relies on dew point as a measurment for humidity. According to the National Oceanic and Atmospheric Association, "If you want a real judge of just how 'dry' or 'humid' it will feel outside, look at the dew point instead of the rerlative humidity. The higher the dew point, the muggier it will feel." The assocaition suggests the folling ranges:
+
+  * less than or equal to 55: dry and comfortable
+  * between 55 and 65: becoming "sticky" with muggy evenings
+  * greater than or equal to 65: lots of moisture in the air, becoming oppressive
 
 <p align="center">
   <img width="200" src="https://d21xlh2maitm24.cloudfront.net/nyc/Citi-Bike-provided-by-Lyft-Positive-170x57px.svg?mtime=20201023151104">
@@ -84,6 +100,7 @@ Temp = pvalue=1.9517356662769365e-207
 
 **Future Avenues**
 
+The dataset is dense and rich with many more avenues to explore. Attributes including gender, age, geography, customer type, and other additional weather conditions could be explored to further refine these findings or answer other questions.
 Parse the data further
 moderate weather conditions
 seasons
