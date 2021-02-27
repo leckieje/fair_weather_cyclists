@@ -83,6 +83,8 @@ Temperature, dew point and rain were all plotted against rides/hour. The goal wa
 <img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_temp_dot.png" width="375"> 
 <img align="left" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rides_rain_dot.png" width="375"> 
 
+<br /> 
+
 For this first pass at my test, two subpopulations for each weather condition were created. Based on experience, recomendations from experts, and the resulting plots, conditions were split into the following groups with resulting sizes: 
 
   * <b>Rain:</b> No rain (=0mm): 8,033 vs. Any rain (>0mm): 679
