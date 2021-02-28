@@ -118,7 +118,7 @@ The test returned extremely low p-values, well below the alpha, for all three te
 
 ### The Future
 
-This was a first pass at combining weather measurements and ride data for the purpose a single statistical test. The resulting dataset is dense and rich with many more avenues for exploration.
+This was a first pass at combining weather measurements and ride data for the purpose of a single statistical test. The resulting dataset is dense and rich with many more avenues for exploration.
 
 A finer understanding of weather's impact on ridership could be gained by parsing the data further. Additional sub-populations could be created to account for more moderate weather conditions, seasons, and the time of day. This test did not account for the continuous nature of the data over 24 hour periods. 
 
