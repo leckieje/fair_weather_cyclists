@@ -3,7 +3,7 @@
 *Does weather impact Citi Bike ridership in New York City?*
 
 <p align="center">
-  <img width="650" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/rider_in_the_rain.jpg">
+  <img width="650" src="https://github.com/leckieje/fair_weather_cyclists/blob/main/images/fair_weather_cyclist.png">
 </p>
 
 New Yorkers are supposed to be tough. They're supposed to be resilient. They're supposed to be like this guy in a suit and tie riding a bike through the East Village in the rain. But I must confess, that even as a New Yorker with a deep love for my two-wheeled machine, I am a fair-weather cyclist. 
